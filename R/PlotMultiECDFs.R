@@ -39,7 +39,11 @@ PlotMultiECDFs = function (x,
   }
   
   list_names = names(ecdf_list)
+  legend_labels = c()
   
-  legend("bottomright", list_names, lty=c(1,1), col=colours, cex=0.85, pt.cex=1.00 )
+  for (i in 1:length(x) ) {
+       legend_labels[i] =  sprintf("%s (n=%s)", list_names[i], length(x[[i]] ) ) }
+  
+  legend("bottomright", legend_labels, lty=c(1,1), col=colours, cex=0.85, pt.cex=1.00 )
   ecdf_list <<- ecdf_list #Generate a global variable
 }

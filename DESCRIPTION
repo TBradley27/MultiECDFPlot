@@ -1,6 +1,6 @@
 Package: MultiECDFPlot
 Title: Plot Multiple ECDFs onto the Same Plot from a List of Vectors, with Optional Annotations 
-Version: 0.1.0
+Version: 0.1.1
 Date: 2017-07-31
 Authors@R: person("Thomas", "Bradley", email = "thomas.bradley@uea.ac.uk", role = c("aut", "cre"))
 Description: This is a package for the convenient plotting of multiple data vectors as ECDFs (empricial cumulative distribution function) on a single plot. The multiecdfplot function, which is the primary plotting function of this package, takes a named list of vectors as input. When calling the function, graphical parameters can be passed to the base plotting function. Functions to annotate the graph with vertical and horizontal axis thresholds, and also the p-values from relevant statistical tests are also included.
