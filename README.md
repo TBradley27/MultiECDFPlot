@@ -32,9 +32,18 @@ library("MultiECDFPlot")
 PlotMultiECDFs is the core function of this R package. It generates a multi-ECDF plot given a named list of vectors as input:
 
 ```R
-example_vectors = list(a=rnorm(1000), b=rnorm(1000), c=rnorm(1000,
- mean=0.3))
+example_vectors = list(a=rnorm(1000), b=rnorm(1000), c=rnorm(1000, mean=0.3))
 PlotMultiECDFs (example_vectors, xlim=range(-3, 3), main='foo', xlab='bar')
 ```
-![Image of PlotMultiECDFs](https://github.com/TBradley27/MultiECDFPlot/blob/create_readme/images/PlotMultiECDFs.Rplot.png)
+![Image of PlotMultiECDFs](https://github.com/TBradley27/MultiECDFPlot/blob/master/images/PlotMultiECDFs.Rplot.png)
 
+### PlotCutoff
+
+The *PlotCutoff* function plots a set of vertical and horizontal cutoff lines given either a starting horizontal or vertical position and a curve of interest. The point at which the relevant line interesects the y or x-axis is indicated:
+
+```R
+PlotCutoff(v=0.5, vectorName="a")
+```
+![Image of PlotCutoff](https://github.com/TBradley27/MultiECDFPlot/blob/master/images/PlotCutoff.Rplot.png)
+
+Further information about functions can be found in a function's corresponding manual page.
