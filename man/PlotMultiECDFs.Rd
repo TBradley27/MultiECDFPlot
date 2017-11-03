@@ -17,7 +17,7 @@ PlotMultiECDFs(x, colours = rainbow(n = length(x)), ...)
 Plots multiple ECDFs onto same plot using named list of vectors as input.
 }
 \examples{
-example_vectors = list(a=rnorm(1000), b=rnorm(1000), c=rnorm(1000, 
+example_vectors = list(a=rnorm(1000), b=rnorm(1000), c=rnorm(1000,
  mean=0.3))
 PlotMultiECDFs (example_vectors, xlim=range(-3, 3), main='foo', xlab='bar')
 }
