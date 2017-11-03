@@ -25,7 +25,7 @@ starting line position is used as default. Multiple line sets can be
 plotted onto the same plot
 }
 \examples{
-Add_Threshold_Line(v=0.5, vectorName="a")
-Add_Threshold_Line(h=0.3)
-Add_Threshold_Line(0.2)
+PlotCutoff(v=0.5, vectorName="a")
+PlotCutoff(h=0.3)
+PlotCutoff(0.2)
 }
