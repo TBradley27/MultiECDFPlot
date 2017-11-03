@@ -36,4 +36,6 @@ example_vectors = list(a=rnorm(1000), b=rnorm(1000), c=rnorm(1000,
  mean=0.3))
 PlotMultiECDFs (example_vectors, xlim=range(-3, 3), main='foo', xlab='bar')
 ```
+![Image of PlotMultiECDFs]
+(https://github.com/TBradley27/MultiECDFPlot/blob/create_readme/images/PlotMultiECDFs.Rplot.png)
 
