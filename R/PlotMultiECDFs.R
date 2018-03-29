@@ -29,13 +29,13 @@ PlotMultiECDFs = function (x,
   tmp_ecdf = ecdf(x[[1]]) # ecdf - empirical cumulative distribution function
   ecdf_list = c(ecdf_list, tmp_ecdf) # append to list
   names(ecdf_list)[1] = names(x[1])
-  plot(tmp_ecdf, col=colours[1], ...)
+  plot(tmp_ecdf, col=colours[1], ylab="Cumulative Fraction", ...)
 
   for (i in 2:length(x)   ) {
     tmp_ecdf = ecdf(x[[i]])
     ecdf_list = c(ecdf_list, tmp_ecdf) # append to list
     names(ecdf_list)[i] = names(x[i])
-    plot(tmp_ecdf, col=colours[i], add=T, ylab="Cumulative Fraction", ...)
+    plot(tmp_ecdf, col=colours[i], add=T, ...)
   }
 
   list_names = names(ecdf_list)
