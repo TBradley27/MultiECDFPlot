@@ -35,7 +35,7 @@ PlotMultiECDFs = function (x,
     tmp_ecdf = ecdf(x[[i]])
     ecdf_list = c(ecdf_list, tmp_ecdf) # append to list
     names(ecdf_list)[i] = names(x[i])
-    plot(tmp_ecdf, col=colours[i], add=T, ...)
+    plot(tmp_ecdf, col=colours[i], add=T, ylab="Cumulative Fraction", ...)
   }
 
   list_names = names(ecdf_list)
